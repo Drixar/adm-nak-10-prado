@@ -1,0 +1,129 @@
+/*********************************/
+/****** PAGINA DE NOTICIAS *******/
+/*********************************/
+
+.pag__noticias {
+  // background-color: map-get($colores, secund-1);
+  // background-image: linear-gradient(90deg,
+  //         map-get($colores, secund-1),
+  //         map-get($colores, principal-1));
+  // padding: 2rem;
+  // text-align: center;
+  // font-weight: 300;
+  // justify-content: center;
+  @include pagina;
+
+  // h1 {
+  //   font-weight: 300;
+  //   margin-bottom: 1rem;
+  //   border-bottom: 1px solid map-get($colores, secund-1);
+  // }
+
+  .noti__art {
+    border: solid 1px map-get($colores, trans);
+    justify-content: center;
+    border-radius: 1rem;
+
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      overflow: hidden;
+      object-fit: cover;
+      filter: grayscale(100%) sepia(30%);
+    }
+    
+    h3 {
+      margin-top: 1rem;
+      font-weight: 300;
+      color: map-get($colores, frente);
+      border-bottom: 1px solid map-get($colores, principal-1);
+    }
+    h4 {
+      margin-top: 1rem;
+      font-weight: 300;
+      color: map-get($colores, principal-1);
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: start;
+      font-weight: 200;
+      color: map-get($colores, frente);
+      margin-bottom: 0;
+      span{
+          font-weight: 400;
+          margin-top: 1rem;
+      }
+    }
+
+    .btn {
+      background-color: map-get($colores, principal-1);
+      color: map-get($colores, frente);
+      margin-top: 1rem;
+      box-shadow: 0 3px 3px map-get($colores, fondo);
+      transition: 0.5s ease-in-out;
+      font-weight: 300;
+
+      &:focus {
+        background-color: map-get($colores, trans);
+        margin-top: 1rem;
+        box-shadow: 0 3px 3px map-get($colores, fondo);
+        transition: 0.5s ease-in-out;
+        font-weight: 300;
+      }
+
+      &:hover {
+        background-color: map-get($colores, trans);
+        box-shadow: none;
+      }
+    }
+  }
+}
+table {
+	width: 80%;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px map-get($colores, fondo);
+}
+
+th,
+td {
+	padding: .1rem;
+	background-color: map-get($colores, fondo);
+	color: map-get($colores, frente);
+    font-weight: 200;
+}
+
+th {
+	text-align: center;
+    font-weight: 300;
+}
+
+thead {
+	th {
+		background-color: map-get($colores, principal-1);
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: map-get($colores, trans);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				// top: -9999px;
+				// bottom: -9999px;
+				background-color: map-get($colores, trans);
+				z-index: -1;
+			}
+		}
+	}
+}

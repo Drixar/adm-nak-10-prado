@@ -1,0 +1,46 @@
+/*********************************/
+/***********NOSOTROS**************/
+/*********************************/
+
+.pag__nosotros {
+    @include pagina;
+    // height: 100vh;
+
+    .fila__nosotros {
+        justify-content: center;
+        padding: 2rem;
+        gap: 1rem;
+
+        .card {
+            @include tarjeta;
+            height: 100%;
+            display: flex;
+            display: block;
+
+            &:hover {
+                transform: scale(1.025);
+                box-shadow: map-get($colores, fondo) 0px 5px 15px;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 300;
+                text-align: center;
+                margin-bottom: 1rem;
+                display: block;
+                padding: 0 !important;
+                margin: 0 !important;
+                color: map-get($colores, fondo);
+                border-bottom: 1px solid map-get($colores, principal-1);
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 300;
+                color: map-get($colores, fondo);
+            }
+        }
+    }
+}
+
+

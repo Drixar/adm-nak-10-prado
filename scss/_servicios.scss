@@ -1,0 +1,152 @@
+/*********************************/
+/****** PAGINA DE SERVICIOS ******/
+/*********************************/
+
+.pag__servicios {
+  @include pagina;
+  // display: flex;
+  gap: 1rem;
+
+  .card {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    z-index: 9997;
+    display: block;
+    border: none;
+    border-radius: .5rem;
+    background-color: map-get($colores, fondo);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 1s ease-in-out;
+      filter: grayscale(100%) sepia(20%)brightness(30%);
+      border-radius: .5rem;
+      background-color: map-get($colores, fondo);
+      
+
+    }
+    &:not(:nth-child(10)) {
+      margin-bottom: 1rem;
+    }
+    .overlay-box {
+      position: absolute;
+      bottom: 0;
+      z-index: 9998;
+      left: 0;
+
+      h4 {
+        font-size: 16px;
+        display: block;
+        font-weight: 300;
+        font-size: 1.75rem;
+        color: map-get($colores, principal-1);
+        text-shadow: 0 0 1px map-get($colores, fondo);
+        transition: color .4s;
+      }
+      p {
+        color: map-get($colores, frente);
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        display: block;
+        max-height: 0;
+        line-height: 1.5 rem;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.4s ease-out, max-height 0.4s ease-out, margin 0.4s;
+      }
+    }
+    &:hover {
+      p {
+        opacity: 1;
+        max-height: 20rem;
+        margin-top: 5px;
+        transition: opacity 0.4s ease-out, max-height 0.9s ease-out;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    height: 100vh;
+    .card {
+      height: 95vh;
+      flex: 1;
+      transition: all 0.3s ease-out;
+      position: relative;
+      overflow: hidden;
+      border: none;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 1s ease-in-out;
+        filter: grayscale(100%) sepia(20%)brightness(30%);
+      }
+      &:not(:nth-child(10)) {
+        margin-right: 1rem;
+      }
+      .overlay-box {
+        h4 {
+          color: map-get($colores, principal-1);
+          font-weight: 300;
+          transform: rotate(-90deg);
+          transform-origin: 0% 0%;
+          transition: all 0.5s ease-out;
+          min-height: 100%;
+          position: absolute;
+          top: 100%;
+          font-size: 2.5rem;
+          white-space: nowrap;
+        }
+        p {
+          display: none;
+        }
+      }
+      &:hover {
+        flex-grow: 6;
+        .overlay-box {
+          height: 100%;
+          h4 {
+            text-align: center;
+            padding: 0.5em;
+            top: 0;
+            color: map-get($colores, principal-1);
+            transform: rotate(0deg);
+            width: 100%;
+            height: 100%;
+          }
+          p {
+            display: block;
+            margin-top: 20%;
+            padding: 0 1rem ;
+            color: map-get($colores, frente);
+            text-align: center;
+            justify-content: center;
+            font-weight: 200;
+            font-size: 1.5rem;
+            line-height: 2rem;
+          }
+
+   
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    h4 {
+      font-size: 2.5rem;
+    }
+
+    &:hover {
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

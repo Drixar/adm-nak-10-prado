@@ -1,0 +1,252 @@
+/*********************************/
+/************HEADER***************/
+/*********************************/
+
+/*********************************/
+/***********TOP-BAR***************/
+/*********************************/
+header {
+  background-color: map-get($colores, fondo);
+  background: linear-gradient(
+      90deg,
+      map-get($colores, sombra),
+      map-get($colores, sombra)
+    ),
+    url(../images/2.jpg) no-repeat center center fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.top__bar {
+  background: transparent;
+  border-bottom: 1px solid map-get($colores, principal-1);
+  display: flex;
+
+  .top__number {
+    // color: map-get($colores, frente);
+    // margin-bottom: 0;
+    // align-items: center;
+
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      color: map-get($colores, frente);
+      padding: 1rem 1rem;
+
+      i {
+        @include icon_display(frente);
+      }
+    }
+  }
+
+  .top__social {
+    text-align: right;
+
+    .top__social__share {
+      // font-weight: 400;
+      // font-size: 1rem;
+      padding: 1rem 1rem;
+      margin-bottom: 0;
+
+      li {
+        display: inline-block;
+
+        a {
+          @include icon_display(frente);
+
+          &:hover {
+            @include icon_glow(principal-1);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*********************************/
+/***********NAV-BAR***************/
+/*********************************/
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+  background: transparent !important;
+  padding: 0;
+  // height: 10vh;
+  border-bottom: 1px solid map-get($colores, principal-1);
+  display: flex;
+  align-items: center;
+
+  .navbar-brand {
+    padding: 0;
+    margin: 0;
+
+    img {
+      height: 5rem;
+      padding: 1rem;
+    }
+  }
+
+  @mixin inic--icon {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+
+  .navbar-toggler {
+    border: 0 !important;
+    padding: 0.25rem 1rem;
+
+    &:focus,
+    &:active {
+      @include inic--icon;
+    }
+
+    .toggler-icon {
+      width: 30px;
+      height: 3px;
+      background-color: map-get($colores, principal-1);
+      display: block;
+      transition: all 0.2s;
+
+      &:focus {
+        @include inic--icon;
+      }
+    }
+
+    .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+
+    .middle-bar {
+      opacity: 0;
+      margin: 5px auto;
+    }
+
+    .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 10% 90%;
+    }
+
+    &.collapsed {
+      padding: 0.25rem 1rem;
+
+      .top-bar {
+        transform: rotate(0);
+      }
+
+      .middle-bar {
+        opacity: 1;
+      }
+
+      .bottom-bar {
+        transform: rotate(0);
+      }
+
+      .toggler-icon {
+        background-color: map-get($colores, frente);
+      }
+    }
+  }
+
+  .navbar-nav {
+    align-items: flex-end;
+
+    .active a {
+      text-decoration: none;
+      // font-size: 1.25rem;
+      // font-weight: 300;
+      color: map-get($colores, principal-1);
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 2px;
+      text-shadow: 0 0 0.5rem map-get($colores, principal-1);
+
+      &:hover {
+        text-decoration: none;
+        color: map-get($colores, principal-1);
+        cursor: context-menu;
+        text-shadow: 0 0 0.5rem map-get($colores, principal-1);
+      }
+    }
+
+    li {
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        // font-size: 1.25rem;
+        // font-weight: 400;
+        color: map-get($colores, frente);
+        padding: 5px 12px;
+        margin: 0 0.25rem;
+        border-radius: 3px;
+        line-height: 24px;
+        display: inline-block;
+
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size 0.3s;
+
+        &:hover {
+          text-decoration: none;
+          color: map-get($colores, frente);
+          text-shadow: 0 0 0.5rem map-get($colores, frente);
+          background-size: 100% 2px;
+        }
+      }
+    }
+  }
+}
+
+/*********************************/
+/********BANER SUPERIOR***********/
+/*********************************/
+.baner {
+  height: 75vh;
+  align-items: center;
+
+  img {
+    display: none;
+  }
+
+  h1 {
+
+    color: map-get($colores, frente);
+    line-height: 3.2rem;
+  }
+
+  h2 {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%;
+    color: map-get($colores, frente);
+    background-color: map-get($colores, fondo);
+    border-top: 1px solid map-get($colores, principal-1);
+    border-bottom: 1px solid map-get($colores, principal-1);
+    transition: color 0.3s;
+
+    &:hover {
+      text-shadow: 0 0 0.5rem map-get($colores, principal-1);
+      color: map-get($colores, principal-1);
+      cursor: pointer;
+    }
+  }
+
+  // h3 {
+  // font-size: 2rem;
+  // font-weight: 400;
+  // }
+}
+
