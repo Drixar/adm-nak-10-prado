@@ -306,7 +306,7 @@ header {
   width: 100%;
   text-align: center;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: 300;
   color: #d00000;
   transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
@@ -317,13 +317,13 @@ header {
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2.1rem;
   font-weight: 300;
   color: #d1ccc7;
   transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
 }
 .baner:hover .head__1 {
-  transform: scale(1.5) translate3d(-1.21rem, -0.5rem, 2rem);
+  transform: scale(1.5) translate3d(-0.95rem, -0.5rem, 2rem);
   color: #d1ccc7;
 }
 .baner:hover .head__2 {
@@ -331,7 +331,7 @@ header {
   color: #d00000;
 }
 .baner:hover .head__3 {
-  transform: scale(1.5) translate3d(3.2rem, 0.5rem, 2rem);
+  transform: scale(1.5) translate3d(2.2rem, 0.2rem, 2rem);
   color: #d1ccc7;
 }
 
@@ -369,15 +369,11 @@ header {
     width: 100%;
     font-size: 3rem;
     font-weight: 300;
-    color: #d00000;
-    transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
   }
   .baner .head .head__2 {
     height: 3.8rem;
     font-size: 4.5rem;
     font-weight: 300;
-    color: #d1ccc7;
-    transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
   }
   .baner:hover .head__1 {
     transform: scale(1.5) translate3d(-1.82rem, -1.5rem, 2rem);

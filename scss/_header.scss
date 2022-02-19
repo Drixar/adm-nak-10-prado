@@ -218,7 +218,7 @@ header {
         decoration: none;
       }
       font: {
-        size: 2rem;
+        size: 1.4rem;
         weight: 300;
       }
       color: map-get($colores, principal-1);
@@ -233,7 +233,7 @@ header {
         decoration: none;
       }
       font: {
-        size: 3rem;
+        size: 2.1rem;
         weight: 300;
       }
       color: map-get($colores, frente);
@@ -242,7 +242,7 @@ header {
   }
   &:hover{
     .head__1 {
-      transform: scale(1.5) translate3d(-1.21rem, -0.5rem, 2rem);
+      transform: scale(1.5) translate3d(-.95rem, -0.5rem, 2rem);
       color: map-get($colores, frente);
     }
     .head__2 {
@@ -250,7 +250,7 @@ header {
       color: map-get($colores, principal-1);
     }
     .head__3 {
-      transform: scale(1.5) translate3d(3.2rem, 0.5rem, 2rem);
+      transform: scale(1.5) translate3d(2.2rem, 0.2rem, 2rem);
       color: map-get($colores, frente);
     }
   } 
@@ -294,8 +294,8 @@ header {
           size: 3rem;
           weight: 300;
         }
-        color: map-get($colores, principal-1);
-        transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
+        // color: map-get($colores, principal-1);
+        // transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
       }
       .head__2 {
         height: 3.8rem;
@@ -303,8 +303,8 @@ header {
           size: 4.5rem;
           weight: 300;
         }
-        color: map-get($colores, frente);
-        transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
+        // color: map-get($colores, frente);
+        // transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
       }
     }
     &:hover{
