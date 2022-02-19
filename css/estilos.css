@@ -335,23 +335,23 @@ header {
 .baner .head.head a:before {
   content: attr(data-bf);
   position: absolute;
-  top: -2.5rem;
-  left: 0.5rem;
+  top: -2rem;
+  left: 4.2rem;
 }
 .baner .head.head a:after {
   content: attr(data-af);
   position: absolute;
-  right: 0;
-  bottom: -2.5rem;
+  right: 3.9rem;
+  bottom: -2rem;
 }
 .baner .head.head a:hover {
   transform: scale(1.15);
 }
 .baner .head.head a:hover:before {
-  transform: scale(1.2) translate(4.3rem, -1rem);
+  transform: scale(1.2) translate(0.8rem, -1rem);
 }
 .baner .head.head a:hover:after {
-  transform: scale(1.2) translate(-5.6rem, 1rem);
+  transform: scale(1.2) translate(-2.5rem, 1rem);
 }
 .baner h2 {
   display: inline-block;
@@ -379,6 +379,26 @@ header {
     text-decoration: none;
     font-size: 4.5rem;
     font-weight: 900;
+  }
+  .baner .head a:before {
+    content: attr(data-bf);
+    top: -2.5rem !important;
+    left: 0.4rem !important;
+  }
+  .baner .head a:after {
+    content: attr(data-af);
+    position: absolute;
+    right: 0rem !important;
+    bottom: -2.5rem !important;
+  }
+  .baner .head a:hover {
+    transform: scale(1.15);
+  }
+  .baner .head a:hover:before {
+    transform: scale(1.2) translate(4.2rem, -1rem) !important;
+  }
+  .baner .head a:hover:after {
+    transform: scale(1.2) translate(-5.8rem, 1rem) !important;
   }
 }
 /*********************************/

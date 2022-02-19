@@ -262,22 +262,22 @@ header {
         &:before {
           content: attr(data-bf);
           position: absolute;
-          top: -2.5rem;
-          left: 0.5rem;
+          top: -2rem;
+          left: 4.2rem;
         }
         &:after {
           content: attr(data-af);
           position: absolute;
-          right: 0;
-          bottom: -2.5rem;
+          right: 3.9rem;
+          bottom: -2rem;
         }
         &:hover {
           transform: scale(1.15);
           &:before {
-            transform: scale(1.2) translate(4.3rem, -1rem);
+            transform: scale(1.2) translate(.8rem, -1rem);
           }
           &:after {
-            transform: scale(1.2) translate(-5.6rem, 1rem);
+            transform: scale(1.2) translate(-2.5rem, 1rem);
           }
         }
       }
@@ -316,6 +316,26 @@ header {
         font: {
           size: 4.5rem;
           weight: 900;
+        }
+        &:before {
+          content: attr(data-bf);
+          // position: absolute;
+          top: -2.5rem !important;
+          left: 0.4rem !important;
+        }
+        &:after {
+          content: attr(data-af);
+          position: absolute;
+          right: 0rem !important;
+          bottom: -2.5rem !important;
+        }
+        &:hover {
+          transform: scale(1.15);
+          &:before {
+            transform: scale(1.2) translate(4.2rem, -1rem) !important;          }
+          &:after {
+            transform: scale(1.2) translate(-5.8rem, 1rem) !important;
+          }
         }
       }
     }
