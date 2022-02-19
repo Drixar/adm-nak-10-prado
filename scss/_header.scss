@@ -18,6 +18,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  min-height: 45rem;
 }
 
 .top__bar {
@@ -274,7 +275,7 @@ header {
         &:hover {
           transform: scale(1.15);
           &:before {
-            transform: scale(1.2) translate(.8rem, -1rem);
+            transform: scale(1.2) translate(0.8rem, -1rem);
           }
           &:after {
             transform: scale(1.2) translate(-2.5rem, 1rem);
@@ -305,6 +306,8 @@ header {
 }
 
 @media (min-width: 768px) {
+  header {
+  min-height: auto;
   .baner {
     .head {
       a {
@@ -332,7 +335,8 @@ header {
         &:hover {
           transform: scale(1.15);
           &:before {
-            transform: scale(1.2) translate(4.2rem, -1rem) !important;          }
+            transform: scale(1.2) translate(4.2rem, -1rem) !important;
+          }
           &:after {
             transform: scale(1.2) translate(-5.8rem, 1rem) !important;
           }
@@ -340,4 +344,5 @@ header {
       }
     }
   }
+}
 }

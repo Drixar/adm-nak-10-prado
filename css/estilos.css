@@ -108,6 +108,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  min-height: 45rem;
 }
 
 .top__bar {
@@ -373,31 +374,34 @@ header {
 }
 
 @media (min-width: 768px) {
-  .baner .head a {
+  header {
+    min-height: auto;
+  }
+  header .baner .head a {
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
     font-size: 4.5rem;
     font-weight: 900;
   }
-  .baner .head a:before {
+  header .baner .head a:before {
     content: attr(data-bf);
     top: -2.5rem !important;
     left: 0.4rem !important;
   }
-  .baner .head a:after {
+  header .baner .head a:after {
     content: attr(data-af);
     position: absolute;
     right: 0rem !important;
     bottom: -2.5rem !important;
   }
-  .baner .head a:hover {
+  header .baner .head a:hover {
     transform: scale(1.15);
   }
-  .baner .head a:hover:before {
+  header .baner .head a:hover:before {
     transform: scale(1.2) translate(4.2rem, -1rem) !important;
   }
-  .baner .head a:hover:after {
+  header .baner .head a:hover:after {
     transform: scale(1.2) translate(-5.8rem, 1rem) !important;
   }
 }
