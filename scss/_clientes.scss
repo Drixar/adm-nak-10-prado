@@ -5,13 +5,6 @@
 .pag__clientes {
   @include pagina;
 
-  // h2 {
-  //   color: map-get($colores, principal-1);
-  //   font-weight: 400;
-  //   margin-bottom: 1rem;
-  //   border-bottom: 1px solid map-get($colores, trans);
-  // }
-
   .galery__row {
     gap: 1rem;
     padding: 0.5rem;
@@ -50,14 +43,14 @@
       .card-body {
         h4 {
           font-weight: 400;
-          // font-size: 1.25rem;
+          font-size: 1.25rem;
           height: 6rem;
           border-bottom: 1px solid map-get($colores, principal-1);
         }
 
         h5 {
-          // font-size: 0.9rem;
-          // font-weight: 400;
+          font-size: 0.9rem;
+          font-weight: 300;
           margin-bottom: 0;
         }
 
@@ -79,7 +72,35 @@
         }
 
         .btn {
-          @include boton(map-get($colores, principal-1), map-get($colores, frente), map-get($colores, fondo));
+          @include boton(
+            map-get($colores, principal-1),
+            map-get($colores, frente),
+            map-get($colores, fondo)
+          );
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .pag__clientes {
+    .galery__row {
+      .card {
+        .card-body {
+          height: 20rem;
+          h4 {
+            font-weight: 400;
+            font-size: 1.7rem;
+            height: 11rem;
+            border-bottom: 1px solid map-get($colores, principal-1);
+          }
+
+          h5 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 0;
+          }
         }
       }
     }

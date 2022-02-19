@@ -2,7 +2,6 @@
 /************FOOTER***************/
 /*********************************/
 footer {
-  // background: map-get($colores, frente);
 
   background-color: map-get($colores, frente);
   background: linear-gradient(
@@ -20,7 +19,6 @@ footer {
   border-bottom: 1px solid map-get($colores, principal-1);
 
   h3 {
-    // font-size: 1.5rem;
     font-weight: 300;
     line-height: 2.5rem;
     color: map-get($colores, frente);
@@ -30,8 +28,6 @@ footer {
   }
 
   p {
-    // font-size: 0.75rem;
-    // font-weight: 400;
     color: map-get($colores, frente);
   }
 
@@ -45,7 +41,6 @@ footer {
 
       i {
         font-weight: 300;
-        // font-size: 1rem;
         padding: 0.35rem;
         display: inline-block;
         color: map-get($colores, frente);
@@ -61,7 +56,6 @@ footer {
       a,
       p {
         color: map-get($colores, frente);
-        // font-size: 1rem;
         text-decoration: none;
         padding: 0.25rem;
         font-weight: 300;
@@ -97,7 +91,6 @@ footer {
 
 
     p {
-      // font-size: 1rem;
       margin-bottom: 0 !important;
     }
   }

@@ -2,12 +2,6 @@ $colores: (
   principal-1: rgba(208, 0, 0, 1),
   principal-8: rgba(208, 0, 0, 0.8),
   principal-2: rgba(208, 0, 0, 0.2),
-  // secund-1: rgba(124, 124, 124, 1),
-  // secund-4: rgba(124, 124, 124, 0.4),
-  // secund-8: rgba(124, 124, 124, 0.8),
-  // terc-1: rgba(250, 170, 141, 1),
-  // terc-4: rgba(250, 170, 141, .4),
-  // terc-8: rgba(250, 170, 141, .8),  
   trans: rgba(209, 204, 199, 0.7),
   frente: rgba(209, 204, 199, 1),
   fondo: rgba(0, 0, 0, 1),
@@ -94,9 +88,6 @@ h2 {
   color: map-get($colores, frente);
   background-color: map-get($colores, fondo);
   border-bottom: 1px solid map-get($colores, principal-1);
-  // text-align: center;
-  // margin: 0;
-  // padding: 0;
 }
 
 h3 {
