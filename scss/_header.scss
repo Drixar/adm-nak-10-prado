@@ -41,7 +41,6 @@ header {
 
   .top__social {
     text-align: right;
-
     .top__social__share {
       padding: 1rem 1rem;
       margin-bottom: 0;
@@ -300,8 +299,6 @@ header {
           size: 3rem;
           weight: 300;
         }
-        // color: map-get($colores, principal-1);
-        // transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
       }
       .head__2 {
         height: 3.8rem;
@@ -309,8 +306,6 @@ header {
           size: 4.5rem;
           weight: 300;
         }
-        // color: map-get($colores, frente);
-        // transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
       }
     }
     &:hover {

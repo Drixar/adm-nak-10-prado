@@ -5,12 +5,6 @@
   font-family: "roboto";
 }
 
-.pag__nosotros .fila__nosotros .card {
-  background-color: rgba(209, 204, 199, 0.7);
-  padding: 1rem;
-  transition: 0.5s ease-in-out;
-}
-
 h1 {
   font-size: 2rem;
   font-weight: 400;
@@ -102,7 +96,7 @@ a {
 /*********************************/
 header {
   background-color: black;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/2.jpg) no-repeat center center fixed;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/2.jpg) no-repeat center center fixed;
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -397,7 +391,7 @@ header {
 /*********************************/
 footer {
   background-color: #d1ccc7;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/2.jpg) no-repeat center center fixed;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/2.jpg) no-repeat center center fixed;
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -484,7 +478,7 @@ footer .pie__copyright p {
   filter: grayscale(100%) sepia(20%) brightness(50%);
 }
 .carousel-item .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   padding: 1.5rem;
   border-radius: 0.5rem;
@@ -560,38 +554,149 @@ footer .pie__copyright p {
   padding: 1rem;
   text-align: center;
   justify-content: center;
+  /* Flip Cards CSS */
 }
-.pag__nosotros .fila__nosotros {
-  justify-content: center;
-  padding: 2rem;
-  gap: 1rem;
+.pag__nosotros .card {
+  margin: 10px 10px;
+  border-radius: 1rem !important;
+  border-color: black;
 }
-.pag__nosotros .fila__nosotros .card {
-  position: relative;
-  align-items: center;
-  height: 100%;
-  display: flex;
-  display: block;
+.pag__nosotros .card-container {
+  display: grid;
+  perspective: 700px;
 }
-.pag__nosotros .fila__nosotros .card:hover {
-  transform: scale(1.025);
-  box-shadow: black 0px 5px 15px;
+.pag__nosotros .card-flip {
+  display: grid;
+  grid-template: 1fr/1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
 }
-.pag__nosotros .fila__nosotros .card h3 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 1rem;
-  display: block;
-  padding: 0 !important;
-  margin: 0 !important;
+.pag__nosotros .card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+.pag__nosotros .front {
+  grid-area: frontAndBack;
+  background-color: black;
+}
+.pag__nosotros .front .card-img-top {
+  height: 34rem;
+  overflow: hidden;
+  object-fit: cover;
+  filter: grayscale(100%) sepia(20%) brightness(30%);
+  border-radius: 1rem !important;
+  border-color: black;
+}
+.pag__nosotros .front .card-img-overlay {
   color: black;
+}
+.pag__nosotros .front .card-img-overlay h4 {
+  color: #d00000;
+  font-weight: 300;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  transition: all 0.5s ease-out;
+  min-height: 100%;
+  position: absolute;
+  top: 90%;
+  font-size: 2.5rem;
+  white-space: nowrap;
+}
+.pag__nosotros .back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+  height: 34rem;
+}
+.pag__nosotros .back .card-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #d1ccc7;
   border-bottom: 1px solid #d00000;
 }
-.pag__nosotros .fila__nosotros .card p {
-  font-size: 1rem;
-  font-weight: 300;
+.pag__nosotros .back h4 {
   color: black;
+  height: 3rem;
+  padding-top: 0.5rem;
+  font-weight: 300;
+}
+.pag__nosotros .back p {
+  color: black;
+  font-size: 1rem;
+  padding: 0.75rem;
+  font-weight: 300;
+}
+.pag__nosotros .back .card__social {
+  text-align: center;
+}
+.pag__nosotros .back .card__social .top__social__share {
+  padding: 1rem 1rem;
+  margin-bottom: 0;
+}
+.pag__nosotros .back .card__social .top__social__share li {
+  display: inline-block;
+}
+.pag__nosotros .back .card__social .top__social__share li a {
+  display: inline-block;
+  color: black;
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 2rem;
+  text-align: center;
+  text-justify: auto;
+  border-radius: 50%;
+  border: 0.2rem solid black;
+  transition: all 0.5s ease;
+}
+.pag__nosotros .back .card__social .top__social__share li a:hover {
+  display: inline-block;
+  color: #d00000;
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 2rem;
+  text-align: center;
+  text-justify: auto;
+  border-radius: 50%;
+  border: 0.2rem solid #d00000;
+  transition: all 0.5s ease;
+  color: #d00000;
+  border: 0.2rem solid #d00000;
+  box-shadow: 0 0 15px #d00000;
+  text-shadow: 0 0 15px #d00000;
+  transition: all 0.5s ease;
+}
+.pag__nosotros .back .btn {
+  background-color: #d00000;
+  color: #d1ccc7;
+  width: 8rem;
+  margin-top: 1rem;
+  box-shadow: 0 3px 10px black;
+  transition: 0.5s ease-in-out;
+  font-weight: 300;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+.pag__nosotros .back .btn:hover {
+  background-color: #d00000;
+  color: #d1ccc7;
+  box-shadow: none;
+}
+.pag__nosotros .back .btn:hover {
+  background-color: #d00000;
+  color: #d1ccc7;
+  width: 8rem;
+  margin-top: 1rem;
+  box-shadow: 0 3px 10px black;
+  transition: 0.5s ease-in-out;
+  font-weight: 300;
+  text-decoration: none;
+}
+.pag__nosotros .back .btn:hover:hover {
+  background-color: #d00000;
+  color: #d1ccc7;
+  box-shadow: none;
+}
+.pag__nosotros .card-container:hover .card-flip {
+  transform: rotateY(180deg);
 }
 
 /*********************************/

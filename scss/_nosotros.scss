@@ -3,42 +3,129 @@
 /*********************************/
 
 .pag__nosotros {
-    @include pagina;
-    .fila__nosotros {
-        justify-content: center;
-        padding: 2rem;
-        gap: 1rem;
+  @include pagina;
+  .card {
+    margin: 10px 10px;
+    border-radius: 1rem !important;
+    border-color: map-get($colores, fondo);
 
-        .card {
-            @include tarjeta;
-            height: 100%;
-            display: flex;
-            display: block;
+  }
 
-            &:hover {
-                transform: scale(1.025);
-                box-shadow: map-get($colores, fondo) 0px 5px 15px;
-            }
+  /* Flip Cards CSS */
+  .card-container {
+    display: grid;
+    perspective: 700px;
+  }
 
-            h3 {
-                font-size: 1.5rem;
-                font-weight: 300;
-                text-align: center;
-                margin-bottom: 1rem;
-                display: block;
-                padding: 0 !important;
-                margin: 0 !important;
-                color: map-get($colores, fondo);
-                border-bottom: 1px solid map-get($colores, principal-1);
-            }
+  .card-flip {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
 
-            p {
-                font-size: 1rem;
-                font-weight: 300;
-                color: map-get($colores, fondo);
-            }
+  }
+
+  .card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+
+  .front {
+    grid-area: frontAndBack;
+    background-color: map-get($colores, fondo);
+    .card-img-top {
+        height: 34rem;
+        overflow: hidden;
+        object-fit: cover;
+        filter: grayscale(100%) sepia(20%) brightness(30%);
+        border-radius: 1rem !important;
+        border-color: map-get($colores, fondo);
+    
+      }
+    .card-img-overlay{
+        color: map-get($colores, fondo);
+
+
+        h4{
+            color: map-get($colores, principal-1);
+            font-weight: 300;
+            transform: rotate(-90deg);
+            transform-origin: 0% 0%;
+            transition: all 0.5s ease-out;
+            min-height: 100%;
+            position: absolute;
+            top: 90%;
+            font-size: 2.5rem;
+            white-space: nowrap;
         }
-    }
-}
 
+    }
+
+  }
+
+  .back {
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+    height: 34rem;
+    .card-header{
+        background-color: map-get($colores, sombra);
+        color: map-get($colores, frente);
+        border-bottom: 1px solid map-get($colores, principal-1);
+
+    }
+    h4{
+        color: map-get($colores, fondo);
+        height: 3rem;
+        padding-top: .5rem;
+        font-weight: 300;
+    }
+    p{
+        color: map-get($colores, fondo);
+        font-size: 1rem;
+        padding: .75rem;
+        font-weight: 300;
+    }
+    .card__social {
+        text-align: center;
+        .top__social__share {
+          padding: 1rem 1rem;
+          margin-bottom: 0;
+      
+          li {
+            display: inline-block;
+            a {
+              @include icon_display(fondo);
+      
+              &:hover {
+                @include icon_glow(principal-1);
+              }
+            }
+          }
+        }
+      }
+      
+      .btn {
+        @include boton(
+          map-get($colores, principal-1),
+          map-get($colores, frente),
+          map-get($colores, fondo)
+        );
+        margin-bottom: 1rem;
+        &:hover {
+          @include boton(
+            map-get($colores, principal-1),
+            map-get($colores, frente),
+            map-get($colores, fondo)
+          );
+        }
+      }
+  }
+
+  .card-container:hover .card-flip {
+    transform: rotateY(180deg);
+  }
+
+
+}
 
