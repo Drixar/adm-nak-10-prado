@@ -72,7 +72,7 @@ header {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background: transparent !important;
+  background: map-get($colores, fondo) !important;
   padding: 0;
   // height: 10vh;
   border-bottom: 1px solid map-get($colores, principal-1);
@@ -212,18 +212,76 @@ header {
 /*********************************/
 .baner {
   height: 75vh;
-  align-items: center;
 
-  img {
-    display: none;
+  .head {
+    display: flex;
+    overflow: hidden;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+
+    a {
+      text: {
+        transform: uppercase;
+        align: center;
+        decoration: none;
+      }
+      font: {
+        size: 4.5rem;
+        weight: 900;
+      }
+      color: map-get($colores, frente);
+      &:after,
+      &:before {
+        content: "";
+      }
+    }
+    &.head {
+      background-color: transparent;
+      position: relative;
+
+      a {
+        width: 24rem;
+        height: 5rem;
+        line-height: 5rem;
+        position: relative;
+        top: 25%;
+
+        font-weight: 200;
+        color: map-get($colores, frente);
+        transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
+        &:before,
+        &:after {
+          color: map-get($colores, principal-1);
+          font-weight: 300;
+          font-size: 2rem;
+          text-transform: none;
+          transition: inherit;
+        }
+        &:before {
+          content: attr(data-bf);
+          position: absolute;
+          top: -2.5rem;
+          left: 0.5rem;
+        }
+        &:after {
+          content: attr(data-af);
+          position: absolute;
+          right: 0;
+          bottom: -2.5rem;
+        }
+        &:hover {
+          transform: scale(1.15);
+          &:before {
+            transform: scale(1.2) translate(4.3rem, -1rem);
+          }
+          &:after {
+            transform: scale(1.2) translate(-5.6rem, 1rem);
+          }
+        }
+      }
+    }
   }
-
-  h1 {
-
-    color: map-get($colores, frente);
-    line-height: 3.2rem;
-  }
-
   h2 {
     display: inline-block;
     text-decoration: none;
@@ -243,10 +301,4 @@ header {
       cursor: pointer;
     }
   }
-
-  // h3 {
-  // font-size: 2rem;
-  // font-weight: 400;
-  // }
 }
-
