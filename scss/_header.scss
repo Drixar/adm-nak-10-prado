@@ -229,7 +229,7 @@ header {
         decoration: none;
       }
       font: {
-        size: 4.5rem;
+        size: 3rem;
         weight: 900;
       }
       color: map-get($colores, frente);
@@ -244,11 +244,10 @@ header {
 
       a {
         width: 24rem;
-        height: 5rem;
-        line-height: 5rem;
+        height: 3rem;
+        line-height: 3rem;
         position: relative;
         top: 25%;
-
         font-weight: 200;
         color: map-get($colores, frente);
         transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
@@ -301,6 +300,24 @@ header {
       text-shadow: 0 0 0.5rem map-get($colores, principal-1);
       color: map-get($colores, principal-1);
       cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .baner {
+    .head {
+      a {
+        text: {
+          transform: uppercase;
+          align: center;
+          decoration: none;
+        }
+        font: {
+          size: 4.5rem;
+          weight: 900;
+        }
+      }
     }
   }
 }
