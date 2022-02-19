@@ -290,11 +290,13 @@ header {
 /*********************************/
 .baner {
   height: 75vh;
+  min-height: 33rem;
 }
 .baner .head {
   display: flex;
   overflow: hidden;
   height: 50vh;
+  min-height: 22rem;
   text-align: center;
   justify-content: center;
 }
