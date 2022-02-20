@@ -1014,7 +1014,7 @@ tbody td:hover:before {
   opacity: 0;
 }
 .pag__clientes .galery__row .card .card-body h4 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.25rem;
   height: 6rem;
   border-bottom: 1px solid #ff2323;
@@ -1070,8 +1070,8 @@ tbody td:hover:before {
     height: 20rem;
   }
   .pag__clientes .galery__row .card .card-body h4 {
-    font-weight: 400;
-    font-size: 1.7rem;
+    font-weight: 300;
+    font-size: 1.5rem;
     height: 11rem;
     border-bottom: 1px solid #ff2323;
   }

@@ -42,7 +42,7 @@
 
       .card-body {
         h4 {
-          font-weight: 400;
+          font-weight: 300;
           font-size: 1.25rem;
           height: 6rem;
           border-bottom: 1px solid map-get($colores, principal-1);
@@ -90,8 +90,8 @@
         .card-body {
           height: 20rem;
           h4 {
-            font-weight: 400;
-            font-size: 1.7rem;
+            font-weight: 300;
+            font-size: 1.5rem;
             height: 11rem;
             border-bottom: 1px solid map-get($colores, principal-1);
           }
