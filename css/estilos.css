@@ -14,9 +14,9 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #d1ccc7;
+  color: whitesmoke;
   background-color: black;
-  border-bottom: 1px solid #d00000;
+  border-bottom: 1px solid #ff2323;
 }
 
 h3 {
@@ -107,25 +107,25 @@ header {
 
 .top__bar {
   background: transparent;
-  border-bottom: 1px solid #d00000;
+  border-bottom: 1px solid #ff2323;
   display: flex;
 }
 .top__bar .top__number p {
   font-weight: 400;
   font-size: 1rem;
-  color: #d1ccc7;
+  color: whitesmoke;
   padding: 1rem 1rem;
 }
 .top__bar .top__number p i {
   display: inline-block;
-  color: #d1ccc7;
+  color: whitesmoke;
   width: 2.25rem;
   height: 2.25rem;
   line-height: 2rem;
   text-align: center;
   text-justify: auto;
   border-radius: 50%;
-  border: 0.2rem solid #d1ccc7;
+  border: 0.2rem solid whitesmoke;
   transition: all 0.5s ease;
 }
 .top__bar .top__social {
@@ -140,31 +140,31 @@ header {
 }
 .top__bar .top__social .top__social__share li a {
   display: inline-block;
-  color: #d1ccc7;
+  color: whitesmoke;
   width: 2.25rem;
   height: 2.25rem;
   line-height: 2rem;
   text-align: center;
   text-justify: auto;
   border-radius: 50%;
-  border: 0.2rem solid #d1ccc7;
+  border: 0.2rem solid whitesmoke;
   transition: all 0.5s ease;
 }
 .top__bar .top__social .top__social__share li a:hover {
   display: inline-block;
-  color: #d00000;
+  color: #ff2323;
   width: 2.25rem;
   height: 2.25rem;
   line-height: 2rem;
   text-align: center;
   text-justify: auto;
   border-radius: 50%;
-  border: 0.2rem solid #d00000;
+  border: 0.2rem solid #ff2323;
   transition: all 0.5s ease;
-  color: #d00000;
-  border: 0.2rem solid #d00000;
-  box-shadow: 0 0 15px #d00000;
-  text-shadow: 0 0 15px #d00000;
+  color: #ff2323;
+  border: 0.2rem solid #ff2323;
+  box-shadow: 0 0 15px #ff2323;
+  text-shadow: 0 0 15px #ff2323;
   transition: all 0.5s ease;
 }
 
@@ -176,7 +176,7 @@ header {
   margin-bottom: 0;
   background: black !important;
   padding: 0;
-  border-bottom: 1px solid #d00000;
+  border-bottom: 1px solid #ff2323;
   display: flex;
   align-items: center;
 }
@@ -200,7 +200,7 @@ header {
 .navbar .navbar-toggler .toggler-icon {
   width: 30px;
   height: 3px;
-  background-color: #d00000;
+  background-color: #ff2323;
   display: block;
   transition: all 0.2s;
 }
@@ -234,7 +234,7 @@ header {
   transform: rotate(0);
 }
 .navbar .navbar-toggler.collapsed .toggler-icon {
-  background-color: #d1ccc7;
+  background-color: whitesmoke;
 }
 .navbar .navbar-nav {
   align-items: flex-end;
@@ -245,26 +245,26 @@ header {
 }
 .navbar .navbar-nav .active a {
   text-decoration: none;
-  color: #d00000;
+  color: #ff2323;
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 100% 2px;
-  text-shadow: 0 0 0.5rem #d00000;
+  text-shadow: 0 0 0.5rem #ff2323;
 }
 .navbar .navbar-nav .active a:hover {
   text-decoration: none;
-  color: #d00000;
+  color: #ff2323;
   cursor: context-menu;
-  text-shadow: 0 0 0.5rem #d00000;
+  text-shadow: 0 0 0.5rem #ff2323;
 }
 .navbar .navbar-nav li {
   list-style: none;
 }
 .navbar .navbar-nav li a {
   text-decoration: none;
-  color: #d1ccc7;
+  color: whitesmoke;
   padding: 5px 12px;
   margin: 0 0.25rem;
   border-radius: 3px;
@@ -279,8 +279,8 @@ header {
 }
 .navbar .navbar-nav li a:hover {
   text-decoration: none;
-  color: #d1ccc7;
-  text-shadow: 0 0 0.5rem #d1ccc7;
+  color: whitesmoke;
+  text-shadow: 0 0 0.5rem whitesmoke;
   background-size: 100% 2px;
 }
 
@@ -297,6 +297,7 @@ header {
   display: flex;
   text-align: center;
   justify-content: center;
+  padding-top: 3rem;
 }
 .baner .head .head__1,
 .baner .head .head__3 {
@@ -306,7 +307,7 @@ header {
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 300;
-  color: #d00000;
+  color: #ff2323;
   transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
 }
 .baner .head .head__2 {
@@ -317,20 +318,20 @@ header {
   text-decoration: none;
   font-size: 2.1rem;
   font-weight: 300;
-  color: #d1ccc7;
+  color: whitesmoke;
   transition: all 2s cubic-bezier(0.21, 1, 0.84, 1.01);
 }
 .baner:hover .head__1 {
   transform: scale(1.5) translate3d(-0.95rem, -0.5rem, 2rem);
-  color: #d1ccc7;
+  color: whitesmoke;
 }
 .baner:hover .head__2 {
   transform: scale(1.5);
-  color: #d00000;
+  color: #ff2323;
 }
 .baner:hover .head__3 {
   transform: scale(1.5) translate3d(2.2rem, 0.2rem, 2rem);
-  color: #d1ccc7;
+  color: whitesmoke;
 }
 
 .titulo a {
@@ -338,15 +339,15 @@ header {
 }
 .titulo a h2 {
   text-align: center;
-  color: #d1ccc7;
+  color: whitesmoke;
   background-color: black;
-  border-top: 1px solid #d00000;
-  border-bottom: 1px solid #d00000;
+  border-top: 1px solid #ff2323;
+  border-bottom: 1px solid #ff2323;
   transition: color 0.3s;
 }
 .titulo a h2:hover {
-  text-shadow: 0 0 0.5rem #d00000;
-  color: #d00000;
+  text-shadow: 0 0 0.5rem #ff2323;
+  color: #ff2323;
   cursor: pointer;
 }
 
@@ -375,40 +376,44 @@ header {
   }
   .baner:hover .head__1 {
     transform: scale(1.5) translate3d(-1.82rem, -1.5rem, 2rem);
-    color: #d1ccc7;
+    color: whitesmoke;
   }
   .baner:hover .head__2 {
     transform: scale(1.5);
-    color: #d00000;
+    color: #ff2323;
   }
   .baner:hover .head__3 {
     transform: scale(1.5) translate3d(4.75rem, 1.3rem, 2rem);
-    color: #d1ccc7;
+    color: whitesmoke;
   }
 }
 /*********************************/
 /************FOOTER***************/
 /*********************************/
 footer {
-  background-color: #d1ccc7;
+  padding: 0;
+  background-color: whitesmoke;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/2.jpg) no-repeat center center fixed;
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-top: 1px solid #d00000;
-  border-bottom: 1px solid #d00000;
+  border-top: 1px solid #ff2323;
+  border-bottom: 1px solid #ff2323;
+}
+footer .pie {
+  width: 100%;
 }
 footer h3 {
   font-weight: 300;
   line-height: 2.5rem;
-  color: #d1ccc7;
+  color: whitesmoke;
   background-color: transparent;
   text-decoration: underline;
-  text-decoration-color: #d00000;
+  text-decoration-color: #ff2323;
 }
 footer p {
-  color: #d1ccc7;
+  color: whitesmoke;
 }
 footer ul {
   padding: 0;
@@ -422,34 +427,34 @@ footer ul li i {
   font-weight: 300;
   padding: 0.35rem;
   display: inline-block;
-  color: #d1ccc7;
+  color: whitesmoke;
   width: 2rem;
   height: 2rem;
   line-height: 2rem;
   text-align: center;
   text-justify: distribute;
   border-radius: 50%;
-  border: 0.1rem solid #d1ccc7;
+  border: 0.1rem solid whitesmoke;
   transition: all 0.5s ease;
 }
 footer ul li a,
 footer ul li p {
-  color: #d1ccc7;
+  color: whitesmoke;
   text-decoration: none;
   padding: 0.25rem;
   font-weight: 300;
   margin: 0;
 }
 footer ul li:hover i {
-  border: 0.1rem solid #d00000;
-  text-shadow: 0 0 15px #d00000;
-  color: #d00000;
+  border: 0.1rem solid #ff2323;
+  text-shadow: 0 0 15px #ff2323;
+  color: #ff2323;
   transition: all 0.5s ease;
 }
 footer ul li:hover a,
 footer ul li:hover p {
-  text-shadow: 0 0 15px #d00000;
-  color: #d00000;
+  text-shadow: 0 0 15px #ff2323;
+  color: #ff2323;
 }
 footer .pie__priv {
   text-align: justify;
@@ -461,7 +466,9 @@ footer .pie__priv p {
 }
 footer .pie__copyright {
   text-align: center;
-  border-top: 1px solid #d00000;
+  border-top: 1px solid #ff2323;
+  width: 100%;
+  max-width: 100%;
 }
 footer .pie__copyright p {
   margin-bottom: 0 !important;
@@ -487,25 +494,25 @@ footer .pie__copyright p {
 .carousel-item .carousel-caption h2 {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #d1ccc7;
+  color: whitesmoke;
   text-shadow: 0 0 15px black;
   background-color: transparent;
 }
 .carousel-item .carousel-caption h3 {
   font-size: 1.25rem;
   font-weight: 300;
-  color: #d1ccc7;
+  color: whitesmoke;
 }
 .carousel-item .carousel-caption p,
 .carousel-item .carousel-caption a {
   font-size: 1rem;
   font-weight: 200;
-  color: #d1ccc7;
+  color: whitesmoke;
 }
 .carousel-item .carousel-caption .carousel-btn {
-  background-color: rgba(208, 0, 0, 0.8);
-  color: #d1ccc7;
-  border-color: #d00000;
+  background-color: rgba(255, 35, 35, 0.8);
+  color: whitesmoke;
+  border-color: #ff2323;
   font-weight: 200;
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -516,7 +523,7 @@ footer .pie__copyright p {
   .carousel-item .carousel-caption h2 {
     font-size: 2rem;
     font-weight: 300;
-    color: #d1ccc7;
+    color: whitesmoke;
     text-shadow: 0 0 15px black;
   }
   .carousel-item .carousel-caption h3 {
@@ -531,7 +538,7 @@ footer .pie__copyright p {
   .carousel-item .carousel-caption h2 {
     font-size: 2.5rem;
     font-weight: 300;
-    color: #d1ccc7;
+    color: whitesmoke;
     text-shadow: 0 0 0.5rem black;
   }
   .carousel-item .carousel-caption h3 {
@@ -592,7 +599,7 @@ footer .pie__copyright p {
   color: black;
 }
 .pag__nosotros .front .card-img-overlay h4 {
-  color: #d00000;
+  color: #ff2323;
   font-weight: 300;
   transform: rotate(-90deg);
   transform-origin: 0% 0%;
@@ -610,8 +617,8 @@ footer .pie__copyright p {
 }
 .pag__nosotros .back .card-header {
   background-color: rgba(0, 0, 0, 0.7);
-  color: #d1ccc7;
-  border-bottom: 1px solid #d00000;
+  color: #ff2323;
+  border-bottom: 1px solid #ff2323;
 }
 .pag__nosotros .back h4 {
   color: black;
@@ -649,24 +656,24 @@ footer .pie__copyright p {
 }
 .pag__nosotros .back .card__social .top__social__share li a:hover {
   display: inline-block;
-  color: #d00000;
+  color: #ff2323;
   width: 2.25rem;
   height: 2.25rem;
   line-height: 2rem;
   text-align: center;
   text-justify: auto;
   border-radius: 50%;
-  border: 0.2rem solid #d00000;
+  border: 0.2rem solid #ff2323;
   transition: all 0.5s ease;
-  color: #d00000;
-  border: 0.2rem solid #d00000;
-  box-shadow: 0 0 15px #d00000;
-  text-shadow: 0 0 15px #d00000;
+  color: #ff2323;
+  border: 0.2rem solid #ff2323;
+  box-shadow: 0 0 15px #ff2323;
+  text-shadow: 0 0 15px #ff2323;
   transition: all 0.5s ease;
 }
 .pag__nosotros .back .btn {
-  background-color: #d00000;
-  color: #d1ccc7;
+  background-color: #ff2323;
+  color: whitesmoke;
   width: 8rem;
   margin-top: 1rem;
   box-shadow: 0 3px 10px black;
@@ -676,13 +683,13 @@ footer .pie__copyright p {
   margin-bottom: 1rem;
 }
 .pag__nosotros .back .btn:hover {
-  background-color: #d00000;
-  color: #d1ccc7;
+  background-color: #ff2323;
+  color: whitesmoke;
   box-shadow: none;
 }
 .pag__nosotros .back .btn:hover {
-  background-color: #d00000;
-  color: #d1ccc7;
+  background-color: #ff2323;
+  color: whitesmoke;
   width: 8rem;
   margin-top: 1rem;
   box-shadow: 0 3px 10px black;
@@ -691,8 +698,8 @@ footer .pie__copyright p {
   text-decoration: none;
 }
 .pag__nosotros .back .btn:hover:hover {
-  background-color: #d00000;
-  color: #d1ccc7;
+  background-color: #ff2323;
+  color: whitesmoke;
   box-shadow: none;
 }
 .pag__nosotros .card-container:hover .card-flip {
@@ -738,7 +745,7 @@ ul {
 }
 .contact-form form label {
   display: block;
-  color: #d1ccc7;
+  color: whitesmoke;
   font-size: 0.75rem;
 }
 .contact-form form p {
@@ -755,12 +762,12 @@ ul {
   border: none;
   background: none;
   outline: 0;
-  color: #d1ccc7;
-  border-bottom: 1px solid #d00000;
+  color: whitesmoke;
+  border-bottom: 1px solid #ff2323;
 }
 .contact-form form button {
-  background: #d00000;
-  color: #d1ccc7;
+  background: #ff2323;
+  color: whitesmoke;
   font-size: 1.25rem;
   font-weight: 300;
   border: 0;
@@ -769,8 +776,8 @@ ul {
   padding: 1em;
 }
 .contact-form form button:hover, .contact-form form button:focus {
-  background: rgba(208, 0, 0, 0.2);
-  color: #d1ccc7;
+  background: rgba(255, 35, 35, 0.2);
+  color: whitesmoke;
   transition: background-color 1s ease-out;
   outline: 0;
 }
@@ -781,13 +788,13 @@ ul {
 }
 .gracias-form h4 {
   font-size: 2rem;
-  color: #d1ccc7;
+  color: whitesmoke;
   font-weight: 300;
   text-align: center;
 }
 .gracias-form button {
-  background: #d00000;
-  color: #d1ccc7;
+  background: #ff2323;
+  color: whitesmoke;
   font-size: 1.25rem;
   font-weight: 300;
   margin-top: 3rem;
@@ -798,8 +805,8 @@ ul {
   top: 100%;
 }
 .gracias-form button:hover, .gracias-form button:focus {
-  background: rgba(208, 0, 0, 0.2);
-  color: #d1ccc7;
+  background: rgba(255, 35, 35, 0.2);
+  color: whitesmoke;
   transition: background-color 1s ease-out;
   outline: 0;
 }
@@ -807,7 +814,7 @@ ul {
 /* CONTACT INFO */
 .contact-info {
   background: black;
-  color: #d1ccc7;
+  color: whitesmoke;
 }
 .contact-info h4,
 .contact-info ul,
@@ -819,14 +826,14 @@ ul {
 .contact-info ul i,
 .contact-info p i {
   display: inline-block;
-  color: #d1ccc7;
+  color: whitesmoke;
   width: 2.25rem;
   height: 2.25rem;
   line-height: 2rem;
   text-align: center;
   text-justify: auto;
   border-radius: 50%;
-  border: 0.2rem solid #d1ccc7;
+  border: 0.2rem solid whitesmoke;
   transition: all 0.5s ease;
   margin-bottom: 0.5rem;
 }
@@ -871,7 +878,7 @@ ul {
   justify-content: center;
 }
 .pag__noticias .noti__art {
-  border: solid 1px rgba(209, 204, 199, 0.7);
+  border: solid 1px rgba(245, 245, 245, 0.7);
   justify-content: center;
   border-radius: 1rem;
 }
@@ -885,19 +892,19 @@ ul {
 .pag__noticias .noti__art h3 {
   margin-top: 1rem;
   font-weight: 300;
-  color: #d1ccc7;
-  border-bottom: 1px solid #d00000;
+  color: whitesmoke;
+  border-bottom: 1px solid #ff2323;
 }
 .pag__noticias .noti__art h4 {
   margin-top: 1rem;
   font-weight: 300;
-  color: #d00000;
+  color: #ff2323;
 }
 .pag__noticias .noti__art p {
   font-size: 1rem;
   text-align: start;
   font-weight: 200;
-  color: #d1ccc7;
+  color: whitesmoke;
   margin-bottom: 0;
 }
 .pag__noticias .noti__art p span {
@@ -905,22 +912,22 @@ ul {
   margin-top: 1rem;
 }
 .pag__noticias .noti__art .btn {
-  background-color: #d00000;
-  color: #d1ccc7;
+  background-color: #ff2323;
+  color: whitesmoke;
   margin-top: 1rem;
   box-shadow: 0 3px 3px black;
   transition: 0.5s ease-in-out;
   font-weight: 300;
 }
 .pag__noticias .noti__art .btn:focus {
-  background-color: rgba(209, 204, 199, 0.7);
+  background-color: rgba(245, 245, 245, 0.7);
   margin-top: 1rem;
   box-shadow: 0 3px 3px black;
   transition: 0.5s ease-in-out;
   font-weight: 300;
 }
 .pag__noticias .noti__art .btn:hover {
-  background-color: rgba(209, 204, 199, 0.7);
+  background-color: rgba(245, 245, 245, 0.7);
   box-shadow: none;
 }
 
@@ -935,7 +942,7 @@ th,
 td {
   padding: 0.1rem;
   background-color: black;
-  color: #d1ccc7;
+  color: whitesmoke;
   font-weight: 200;
 }
 
@@ -945,11 +952,11 @@ th {
 }
 
 thead th {
-  background-color: #d00000;
+  background-color: #ff2323;
 }
 
 tbody tr:hover {
-  background-color: rgba(209, 204, 199, 0.7);
+  background-color: rgba(245, 245, 245, 0.7);
 }
 tbody td {
   position: relative;
@@ -959,7 +966,7 @@ tbody td:hover:before {
   position: absolute;
   left: 0;
   right: 0;
-  background-color: rgba(209, 204, 199, 0.7);
+  background-color: rgba(245, 245, 245, 0.7);
   z-index: -1;
 }
 
@@ -981,7 +988,7 @@ tbody td:hover:before {
   justify-content: center;
 }
 .pag__clientes .galery__row .card {
-  background-color: rgba(209, 204, 199, 0.7);
+  background-color: rgba(245, 245, 245, 0.7);
   padding: 1rem;
   transition: 0.5s ease-in-out;
   position: relative;
@@ -1010,7 +1017,7 @@ tbody td:hover:before {
   font-weight: 400;
   font-size: 1.25rem;
   height: 6rem;
-  border-bottom: 1px solid #d00000;
+  border-bottom: 1px solid #ff2323;
 }
 .pag__clientes .galery__row .card .card-body h5 {
   font-size: 0.9rem;
@@ -1018,22 +1025,22 @@ tbody td:hover:before {
   margin-bottom: 0;
 }
 .pag__clientes .galery__row .card .card-body .btn {
-  background-color: #d00000;
-  color: #d1ccc7;
+  background-color: #ff2323;
+  color: whitesmoke;
   width: 8rem;
   margin-top: 1rem;
-  box-shadow: 0 3px 10px #d1ccc7;
+  box-shadow: 0 3px 10px whitesmoke;
   transition: 0.5s ease-in-out;
   font-weight: 300;
   text-decoration: none;
 }
 .pag__clientes .galery__row .card .card-body .btn:hover {
-  background-color: #d00000;
-  color: #d1ccc7;
+  background-color: #ff2323;
+  color: whitesmoke;
   box-shadow: none;
 }
 .pag__clientes .galery__row .card:hover {
-  background-color: #d1ccc7;
+  background-color: whitesmoke;
 }
 .pag__clientes .galery__row .card:hover .card-img-top {
   filter: grayscale(0%);
@@ -1043,8 +1050,8 @@ tbody td:hover:before {
   color: black;
 }
 .pag__clientes .galery__row .card:hover .btn {
-  background-color: #d00000;
-  color: #d1ccc7;
+  background-color: #ff2323;
+  color: whitesmoke;
   width: 8rem;
   margin-top: 1rem;
   box-shadow: 0 3px 10px black;
@@ -1053,8 +1060,8 @@ tbody td:hover:before {
   text-decoration: none;
 }
 .pag__clientes .galery__row .card:hover .btn:hover {
-  background-color: #d00000;
-  color: #d1ccc7;
+  background-color: #ff2323;
+  color: whitesmoke;
   box-shadow: none;
 }
 
@@ -1066,7 +1073,7 @@ tbody td:hover:before {
     font-weight: 400;
     font-size: 1.7rem;
     height: 11rem;
-    border-bottom: 1px solid #d00000;
+    border-bottom: 1px solid #ff2323;
   }
   .pag__clientes .galery__row .card .card-body h5 {
     font-size: 1.2rem;
@@ -1121,12 +1128,12 @@ tbody td:hover:before {
   display: block;
   font-weight: 300;
   font-size: 1.75rem;
-  color: #d00000;
+  color: #ff2323;
   text-shadow: 0 0 1px black;
   transition: color 0.4s;
 }
 .pag__servicios .card .overlay-box p {
-  color: #d1ccc7;
+  color: whitesmoke;
   font-size: 1rem;
   margin-top: 1rem;
   display: block;
@@ -1166,7 +1173,7 @@ tbody td:hover:before {
     margin-right: 1rem;
   }
   .pag__servicios .card .overlay-box h4 {
-    color: #d00000;
+    color: #ff2323;
     font-weight: 300;
     transform: rotate(-90deg);
     transform-origin: 0% 0%;
@@ -1190,7 +1197,7 @@ tbody td:hover:before {
     text-align: center;
     padding: 0.5em;
     top: 0;
-    color: #d00000;
+    color: #ff2323;
     transform: rotate(0deg);
     width: 100%;
     height: 100%;
@@ -1199,7 +1206,7 @@ tbody td:hover:before {
     display: block;
     margin-top: 20%;
     padding: 0 1rem;
-    color: #d1ccc7;
+    color: whitesmoke;
     text-align: center;
     justify-content: center;
     font-weight: 200;

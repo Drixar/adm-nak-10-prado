@@ -2,7 +2,10 @@
 /************FOOTER***************/
 /*********************************/
 footer {
-
+  .pie{
+    width: 100%;
+  }
+  padding: 0;
   background-color: map-get($colores, frente);
   background: linear-gradient(
       90deg,
@@ -14,7 +17,6 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   border-top: 1px solid map-get($colores, principal-1);
   border-bottom: 1px solid map-get($colores, principal-1);
 
@@ -89,7 +91,8 @@ footer {
   .pie__copyright {
     text-align: center;
     border-top: 1px solid map-get($colores, principal-1);
-
+    width: 100%;
+max-width: 100%;
 
     p {
       margin-bottom: 0 !important;

@@ -59,9 +59,7 @@
             font-size: 2.5rem;
             white-space: nowrap;
         }
-
     }
-
   }
 
   .back {
@@ -70,7 +68,7 @@
     height: 34rem;
     .card-header{
         background-color: map-get($colores, sombra);
-        color: map-get($colores, frente);
+        color: map-get($colores, principal-1);
         border-bottom: 1px solid map-get($colores, principal-1);
 
     }
