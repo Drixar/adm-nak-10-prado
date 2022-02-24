@@ -986,70 +986,106 @@ tbody td:hover:before {
   gap: 1rem;
   padding: 0.5rem;
   justify-content: center;
-}
-.pag__clientes .galery__row .card {
-  background-color: rgba(245, 245, 245, 0.7);
-  padding: 1rem;
-  transition: 0.5s ease-in-out;
-  position: relative;
+  display: flex;
   align-items: center;
+  background-color: black;
+  min-height: 100vh;
+  gap: 1rem;
 }
-.pag__clientes .galery__row .card .card-img-top {
+.pag__clientes .galery__row .book {
+  width: 24rem;
+  font-size: 1.4rem;
+  text-align: center;
+  position: relative;
+  color: #484e4a;
+  padding: 0;
+}
+.pag__clientes .galery__row .book .page {
+  width: 100%;
+  height: 30rem;
+  perspective: 2000px;
+  border-color: black;
+}
+.pag__clientes .galery__row .book .page__1 {
+  background-color: #141414;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: all 1s 0.3s;
+  transform-origin: 0 50%;
+  z-index: 2;
+}
+.pag__clientes .galery__row .book .page__1 .cli-img-top {
   height: 15rem;
   overflow: hidden;
   position: relative;
+  filter: grayscale(75%) brightness(75%);
 }
-.pag__clientes .galery__row .card .card-img-top iframe {
-  object-fit: cover;
+.pag__clientes .galery__row .book .page__1 .cli-title h4 {
+  color: #ff2323;
+  font-weight: 300;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  transition: all 0.5s ease-out;
   position: absolute;
+  top: 90%;
+  font-size: 2.5rem;
+  white-space: pre-wrap;
+  text-align: start;
+  margin-top: 1rem;
+  text-shadow: 0.25rem 0.25rem 0.5rem black;
+}
+.pag__clientes .galery__row .book .page__1::after {
+  content: "";
+  background-color: #141414;
+  color: #eff0eb;
+  position: absolute;
+  padding-top: 1.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s 0.5s;
+}
+.pag__clientes .galery__row .book .page__2 {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+.pag__clientes .galery__row .book .page__2 .cli-img-map {
+  height: 15rem;
+  width: auto;
+}
+.pag__clientes .galery__row .book .page__2 .cli-img-map iframe {
+  object-fit: fill;
+  overflow: hidden;
+  position: relative;
   width: 100%;
 }
-.pag__clientes .galery__row .card .card-img-top img {
-  overflow: hidden;
-  object-fit: cover;
-  filter: grayscale(50%);
-  transition: opacity 0.5s ease-in-out;
-}
-.pag__clientes .galery__row .card .card-img-top img:hover {
-  opacity: 0;
-}
-.pag__clientes .galery__row .card .card-body h4 {
+.pag__clientes .galery__row .book .page__2 .cli-body h4 {
   font-weight: 300;
   font-size: 1.25rem;
   height: 6rem;
-  border-bottom: 1px solid #ff2323;
+  padding: 1rem;
+  color: black;
 }
-.pag__clientes .galery__row .card .card-body h5 {
+.pag__clientes .galery__row .book .page__2 .cli-body h5 {
   font-size: 0.9rem;
   font-weight: 300;
   margin-bottom: 0;
+  color: #141414;
 }
-.pag__clientes .galery__row .card .card-body .btn {
-  background-color: #ff2323;
-  color: whitesmoke;
-  width: 8rem;
-  margin-top: 1rem;
-  box-shadow: 0 3px 10px whitesmoke;
-  transition: 0.5s ease-in-out;
-  font-weight: 300;
-  text-decoration: none;
-}
-.pag__clientes .galery__row .card .card-body .btn:hover {
-  background-color: #ff2323;
-  color: whitesmoke;
-  box-shadow: none;
-}
-.pag__clientes .galery__row .card:hover {
-  background-color: whitesmoke;
-}
-.pag__clientes .galery__row .card:hover .card-img-top {
-  filter: grayscale(0%);
-}
-.pag__clientes .galery__row .card:hover h3,
-.pag__clientes .galery__row .card:hover p {
-  color: black;
-}
-.pag__clientes .galery__row .card:hover .btn {
+.pag__clientes .galery__row .book .page__2 .cli-body .btn {
   background-color: #ff2323;
   color: whitesmoke;
   width: 8rem;
@@ -1059,28 +1095,19 @@ tbody td:hover:before {
   font-weight: 300;
   text-decoration: none;
 }
-.pag__clientes .galery__row .card:hover .btn:hover {
+.pag__clientes .galery__row .book .page__2 .cli-body .btn:hover {
   background-color: #ff2323;
   color: whitesmoke;
   box-shadow: none;
 }
-
-@media (min-width: 768px) {
-  .pag__clientes .galery__row .card .card-body {
-    height: 20rem;
-  }
-  .pag__clientes .galery__row .card .card-body h4 {
-    font-weight: 300;
-    font-size: 1.5rem;
-    height: 11rem;
-    border-bottom: 1px solid #ff2323;
-  }
-  .pag__clientes .galery__row .card .card-body h5 {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin-bottom: 0;
-  }
+.pag__clientes .galery__row .book .page__1:hover {
+  transform: rotateY(-87.5deg);
+  box-shadow: 1.5rem 2rem 3rem rgba(0, 0, 0, 0.25);
 }
+.pag__clientes .galery__row .book .page__1:hover::after {
+  opacity: 1;
+}
+
 /*********************************/
 /****** PAGINA DE SERVICIOS ******/
 /*********************************/
